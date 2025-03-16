@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table - Html</title>
+    <style>
+      /* Styling the table */
+      table {
+        width: 60%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Table header */
+      thead {
+        background-color: #d32f2f; /* Dark Red */
+        color: white;
+        font-size: 18px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+
+      /* Alternate row colors */
+      tbody tr:nth-child(odd) {
+        background-color: #ffe5e5; /* Light Red */
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: #fff;
+      }
+
+      /* Hover effect */
+      tbody tr:hover {
+        background-color: #f5c6c6;
+        transition: 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tables in Html</h1>
+    <table>
+      <!-- Head of the table -->
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Role</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+
+      <!-- body of the table -->
+      <tbody>
+        <tr>
+          <td>Harry</td>
+          <td>Software Developer</td>
+          <td>$70000</td>
+        </tr>
+        <tr>
+          <td>Maithali</td>
+          <td>Blockchain Developer</td>
+          <td>$70000</td>
+        </tr>
+        <tr>
+          <td>Ayasha</td>
+          <td>Frontend Developer</td>
+          <td>$70000</td>
+        </tr>
+        <tr>
+          <td>Renuka</td>
+          <td>Ai engineer</td>
+          <td>$100000</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
