@@ -1,0 +1,126 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background: #ff4d4d;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    color: #ffd700;
+}
+
+/* Main Section */
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/bg.png') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+}
+
+main img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 60%;
+    max-width: 500px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 25px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ffd700;
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+    font-size: 12px;
+    color: #555;
+    background: #f8f8f8;
+    margin-top: 20px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main p {
+        font-size: 18px;
+    }
+
+    input {
+        width: 80%;
+    }
+}
